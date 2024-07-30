@@ -1,9 +1,6 @@
-version: '3'
 services:
   discollama:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: endrence/discollama:latest
     restart: always
     command: ['--redis-host', 'redis']
     environment:
